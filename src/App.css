@@ -18,6 +18,39 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Limit the height of the todo list and make it scrollable */
+.todo-list-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.todo-list-wrapper ul {
+  padding-left: 0;
+}
+
+/* Hide the scroll bar but keep scrolling functionality */
+.todo-list-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-list-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
